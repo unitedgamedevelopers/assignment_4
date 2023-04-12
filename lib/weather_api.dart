@@ -17,9 +17,9 @@ class _WeatherAPIState extends State<WeatherAPI> {
   }
 
   Future<void> getWeatherData() async {
-    String apiKey = 'a4e44cc70e22419781dca5d4c2fe05d1';
-    String cityName = 'Toronto';
-    String apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=$cityName&appid=$apiKey';
+    String apiKey = 'a4e44cc70e22419781dca5d4c2fe05d1'; // Stores API Key
+    String cityName = 'Toronto'; // Stores city name
+    String apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=$cityName&appid=$apiKey'; // URL to get weather data
     try {
       final response = await http.get(Uri.parse(apiUrl));
       if (response.statusCode == 200) {

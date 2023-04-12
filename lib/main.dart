@@ -36,44 +36,44 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.title), // Title for the app bar
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'assets/gif/orchestrate.gif', // Replace with the path to your GIF
+              'assets/gif/orchestrate.gif', // Displays a GIF image
               width: 150,
               height: 150,
               fit: BoxFit.cover,
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 16), // Adds a space of height 16 pixels
             Text(
-              'Assignment 4',
+              'Assignment 4', // Text with font size 24 and bold fontWeight
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 16), // Adds a space of height 16 pixels
             Text(
-              'Welcome to our App developed using Flutter',
+              'Welcome to our App developed using Flutter', // Text with font size 18
               style: TextStyle(fontSize: 18),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 16), // Adds a space of height 16 pixels
             Text(
-              'Developed by:',
+              'Developed by:', // Text with font size 18
               style: TextStyle(fontSize: 18),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 8),
+            SizedBox(height: 8), // Adds a space of height 8 pixels
             Text(
-              '1. Krushil Narola',
+              '1. Krushil Narola', // Text with font size 18
               style: TextStyle(fontSize: 18),
               textAlign: TextAlign.center,
             ),
             Text(
-              '2. Kuldeep Kaur',
+              '2. Kuldeep Kaur', // Text with font size 18
               style: TextStyle(fontSize: 18),
               textAlign: TextAlign.center,
             ),
@@ -88,21 +88,21 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => CalculatorPage()),
+                  MaterialPageRoute(builder: (context) => CalculatorPage()), // Navigates to CalculatorPage when the button is pressed
                 );
               },
               icon: Icon(Icons.calculate), // Calculator icon
-              label: Text('Calculator'),
+              label: Text('Calculator'), // Text on the button
             ),
             ElevatedButton.icon(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => WeatherAPI()),
+                  MaterialPageRoute(builder: (context) => WeatherAPI()), // Navigates to WeatherAPI page when the button is pressed
                 );
               },
               icon: Icon(Icons.cloud), // Weather icon
-              label: Text('Weather API'),
+              label: Text('Weather API'), // Text on the button
             ),
           ],
         ),
